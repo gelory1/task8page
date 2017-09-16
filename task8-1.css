@@ -1,0 +1,288 @@
+.tel-box{
+    color: rgb(41,176,120);
+    width: 100%;
+    height: 1.5em;
+    padding: 1.2em;
+    font-size: .8vw;
+    font-family: 微软雅黑 sans-serif;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.telnb{
+    text-align: center;
+    padding-left: 15vw;
+}
+.tel-img{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-right: 15vw;
+}
+.wechat,.qq,.weblog{
+    background-size: 100%;
+    width: 1.5em;
+    margin: 0 .5em;
+    padding-bottom: 1.5em;
+    border: thin solid rgb(41,176,120);
+    border-radius: 50%;
+}
+.wechat{
+    background: url("images/技能树首页_03.png") no-repeat center;
+}
+.qq{
+    background: url("images/技能树首页_05.png") no-repeat center;
+}
+.weblog{
+    background: url("images/技能树首页_07.png") no-repeat center;
+}
+.header{
+    width: 100%;
+    background-color: rgb(41,176,120);
+    padding-bottom: 3.6em;
+}
+.head-box{
+    width: 25em;
+    margin-right: 15em;
+    float: right;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: .78em;
+}
+.proj1{
+    padding:1.5em;
+    border-bottom: .2em solid #FFFFFF;
+    color: #FFFFFF;
+}
+.proj{
+    padding: 1.5em;
+    color: #FFFFFF;
+}
+.banner{
+    width: 100%;
+    background: url("images/技能树首页_01.png") no-repeat;
+    background-size: 100%;
+    padding-bottom: 35vw;
+}
+.banner-box{
+    position: relative;
+}
+.banner-text-box{
+    width: 100%;
+    height: 34vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner-left,.banner-right{
+    color: #999999;
+    font-size: 3vw;
+}
+.banner-text{
+    color: #FFFFFF;
+}
+.banner-circle{
+    width: 100%;
+    padding-bottom: 2em;
+    position: absolute;
+    bottom: 1vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.cirle{
+    margin: 0.2vw;
+    width: .8vw;
+    padding-bottom: .8vw;
+    border: thin solid #cccccc;
+    border-radius: 50%;
+    float: left;
+}
+.cont-box{
+    width: 100%;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    background-color: rgb(250,250,250);
+}
+.container-fluid{
+    margin: 2em 5vw;
+}
+.row{
+    margin: 0 auto;
+}
+.col-md-3{
+    margin-top: .5em;
+}
+.hts,.sts,.log,.fre{
+    padding: 4em;
+}
+.hts-cont{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 15vw;
+}
+.hts-circle{
+    width: 3em;
+    height: 3em;
+    border: thin solid #c0c0c0;
+    border-radius: 50%;
+    text-align: center;
+    float: left;
+    padding: 0.8em;
+    color: rgb(41,176,120);
+}
+.hts-text{
+    padding:0 1vw;
+    height: 3em;
+    font-size: .5em;
+    padding-top: 1em;
+    color: rgb(153,153,153);
+    text-align: left;
+}
+.hts-img{
+    width: 3em;
+    padding-bottom: 3em;
+    background: url("images/技能树首页_29.png") no-repeat center;
+    float: left;
+}
+.sts-img1{
+    background: url("images/技能树首页_39.png") no-repeat center;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    margin: 0 auto;
+}
+.sts-img2{
+    background: url("images/技能树首页_36.png") no-repeat center;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    margin: 0 auto;
+}
+.sts-img3{
+    background: url("images/技能树首页_33.png") no-repeat center;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    margin: 0 auto;
+}
+.sts-img4{
+    background: url("images/技能树首页_41.png") no-repeat center;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    margin: 0 auto;
+}
+.sts-circle{
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    padding: 1em 0;
+}
+.circle1{
+    margin: 0.2em;
+    width: .8em;
+    padding-bottom: .8em;
+    border: thin solid #cccccc;
+    border-radius: 50%;
+    float: left;
+    background-color: rgb(41,176,120);
+}
+.circle2,.circle3,.circle4{
+    margin: 0.2em;
+    width: .8em;
+    padding-bottom: .8em;
+    border: thin solid #cccccc;
+    border-radius: 50%;
+    float: left;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.ali{
+    width: 8em;
+    padding-bottom: 4em;
+    background: url("images/技能树首页_51.png") no-repeat center;
+}
+.jins{
+    width: 8em;
+    padding-bottom: 4em;
+    background: url("images/技能树首页_54.png") no-repeat center;
+}
+.huanx{
+    width: 8em;
+    padding-bottom: 4em;
+    background: url("images/技能树首页_58.png") no-repeat center;
+}
+.rongl{
+    width: 8em;
+    padding-bottom: 4em;
+    background: url("images/技能树首页_60.png") no-repeat center;
+}
+.qin{
+    width: 8em;
+    padding-bottom: 4em;
+    background: url("images/技能树首页_63.png") no-repeat center;
+}
+.lint{
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+}
+.lin1{
+    padding-bottom: 1em;
+    color: rgb(153,153,153);
+}
+.footer-box{
+    width: 100%;
+    background-color: rgb(38,162,111);
+    padding: 3vw 10vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    color: #FFFFFF;
+    position: relative;
+    font-size: 1vw;
+}
+.footer-text{
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+}
+.text-left{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding-right: 4vw;
+}
+.text-right{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding-left: 4vw;
+}
+.webinf{
+    width: 100%;
+    position: absolute;
+    bottom: .5vw;
+    left: 0;
+    text-align: center;
+    font-size: .5vw;
+}

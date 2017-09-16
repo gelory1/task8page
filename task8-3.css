@@ -1,0 +1,155 @@
+.tel-box{
+    color: rgb(41,176,120);
+    width: 100%;
+    height: 1.5em;
+    padding: 1.2em;
+    font-size: .8vw;
+    font-family: 微软雅黑 sans-serif;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.telnb{
+    text-align: center;
+    padding-left: 15vw;
+}
+.tel-img{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-right: 15vw;
+}
+.wechat,.qq,.weblog{
+    background-size: 100%;
+    width: 1.5em;
+    margin: 0 .5em;
+    padding-bottom: 1.5em;
+    border: thin solid rgb(41,176,120);
+    border-radius: 50%;
+}
+.wechat{
+    background: url("images/技能树首页_03.png") no-repeat center;
+}
+.qq{
+    background: url("images/技能树首页_05.png") no-repeat center;
+}
+.weblog{
+    background: url("images/技能树首页_07.png") no-repeat center;
+}
+.header{
+    width: 100%;
+    background-color: rgb(41,176,120);
+    padding-bottom: 4.35em;
+    position: relative;
+}
+.head-box{
+    width: 25em;
+    margin-right: 15em;
+    float: right;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: .78em;
+}
+.proj1{
+    padding:2em;
+    border-bottom: .2em solid #FFFFFF;
+    color: #FFFFFF;
+}
+.proj{
+    padding: 2em;
+    color: #FFFFFF;
+}
+.head-logo{
+    width: 4em;
+    padding-bottom: 2em;
+    background: url("images/战略合作企业_03.png") no-repeat center;
+    position: absolute;
+    left: 10vw;
+    top: 1em;
+}
+.cont-box{
+    padding-left: 15vw;
+    padding-right: 15vw;
+    width: 100%;
+    background-color: rgb(250,250,250);
+}
+.head-img{
+    width: 8vw;
+    height: 8vw;
+    background: url("images/head.jpg") no-repeat;
+    background-size: 100%;
+    margin: 1em;
+}
+.head-intro{
+    width: 15vw;
+    margin-top: 1em;
+}
+.footer-box{
+    width: 100%;
+    background-color: rgb(38,162,111);
+    padding: 3vw 10vw;
+    margin-top: 10vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    color: #FFFFFF;
+    position: relative;
+    font-size: 1vw;
+}
+.footer-text{
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+}
+.text-left{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding-right: 4vw;
+}
+.text-right{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding-left: 4vw;
+}
+.webinf{
+    width: 100%;
+    position: absolute;
+    bottom: .5vw;
+    left: 0;
+    text-align: center;
+    font-size: .5vw;
+}
+.col-md-4{
+    position: relative;
+    font-size: .8vw;
+}
+.row-box{
+    width: 100%;
+    padding-bottom: 2.5vw;
+    margin-bottom: -2.5vw;
+    padding-right: 5%;
+}
+.cont-div{
+    position: absolute;
+    padding: 3vw 3vw 2.5vw 3vw;
+    margin-bottom: -2.5vw;
+    margin-top: 2em;
+    margin-right: 5%;
+    color: #FFFFFF;
+    top:0;
+    left: 0;
+    width: 95%;
+    opacity: 0;
+    background-color: #000;
+    z-index: 2;
+}
+.col-md-4:hover .cont-div{
+    opacity: .8;
+}
