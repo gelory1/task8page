@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="tel-box">
@@ -20,34 +22,58 @@
         <div class="qq"></div>
         <div class="weblog"></div>
     </div>
+    <div class="tel-hide-box"><span style="border-right:.1em solid rgb(38,162,111)">登录&nbsp;</span>&nbsp;注册</div>
 </div>
 <div class="header">
     <div class="head-box">
         <div class="proj1">首页</div>
-        <div class="proj">职业</div>
+        <div class="proj"><a href="task8-3.html" style="color: #FFFFFF">职业</a></div>
         <div class="proj">推荐</div>
         <div class="proj">关于</div>
     </div>
+    <div class="header-hide-box">
+        <div class="header-hide-logo"></div>
+        <div class="header-hide-menu">
+            <span style="font-family:Comic Sans MS;font-size:14px;">
+            <div class="menu-icon"></div>
+            </span>
+        </div>
+    </div>
 </div>
-<div class="banner-box">
-<div class="banner">
-</div>
-<div class="banner-text-box">
-    <div class="banner-left"><</div>
+
+<div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="images/技能树首页_01.png" alt="First slide">
+        </div>
+        <div class="item">
+            <img src="images/技能树首页_01.png" alt="First slide">
+        </div>
+        <div class="item">
+            <img src="images/技能树首页_01.png" alt="First slide">
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel"
+       data-slide="prev"><</a>
+    <a class="carousel-control right" href="#myCarousel"
+       data-slide="next">></a>
+    <div class="banner-text-box">
     <div class="banner-text">
         <div style="font-size:2vw;float: right">作为你一个初级菜鸟，你是否想要了解</div>
         <br/>
         <div style="float: right">
-        <span style="font-size: 4vw">50万</span>
-        <span style="font-size: 3vw">年薪的程序员,都会哪些技能呢？</span>
+            <span style="font-size: 4vw">50万</span>
+            <span style="font-size: 3vw">年薪的程序员,都会哪些技能呢？</span>
         </div>
     </div>
-    <div class="banner-right">></div>
-</div>
-    <div class="banner-circle">
-        <div class="cirle"></div>
-        <div class="cirle"></div>
-        <div class="cirle"></div>
     </div>
 </div>
 <div class="cont-box">
@@ -195,7 +221,7 @@
     </div>
     </div>
     <div class="row">
-        <div class="log"><b>战略合作企业</b></div>
+        <a href="task8-2.html" style="color: #000000"><div class="log"><b>战略合作企业</b></div></a>
     </div>
     <div class="logo">
         <div class="ali"></div>
@@ -241,14 +267,18 @@
         </div>
         <div class="text-right" style="text-align: left">
             <div>旗下网站</div>
-            <div>草船云孵化器 &nbsp;&nbsp;&nbsp;最强IT特训营</div>
-            <div>葡萄藤轻游戏 &nbsp;&nbsp;&nbsp;桌游精灵</div>
+            <div class="web">
+            <div>草船云孵化器</div><div>最强IT特训营</div>
+            </div>
+            <div class="web">
+            <div>葡萄藤轻游戏</div><div>桌游精灵</div>
+            </div>
         </div>
     </div>
     <div class="footer-img">
-        <div style="padding: .5em;text-align: center">微信公众平台</div>
+        <div style="padding: .5vw;text-align: center;width: 100%;font-size: .8vw">微信公众平台</div>
         <div style="background: url(images/技能树首页_70.png) no-repeat center;padding: .5vw;
-        text-align: center;background-size: 100% 100%;height: 7em">
+        text-align: center;background-size: 100%;padding-bottom: 10vh">
         </div>
     </div>
     <div class="webinf">Copyright © 2015技能树 www.jnshu.com  All Rights Reserved | 京ICP备13005880号</div>

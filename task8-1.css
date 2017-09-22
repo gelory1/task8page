@@ -63,17 +63,15 @@
     padding: 1.5em;
     color: #FFFFFF;
 }
-.banner{
-    width: 100%;
-    background: url("images/技能树首页_01.png") no-repeat;
-    background-size: 100%;
-    padding-bottom: 35vw;
-}
-.banner-box{
+.carousel{
     position: relative;
 }
+.carousel-control{
+    padding-top: 20%;
+}
 .banner-text-box{
-    width: 100%;
+    width: 80vw;
+    margin:0 10vw;
     height: 34vw;
     position: absolute;
     left: 0;
@@ -84,21 +82,8 @@
     justify-content: space-around;
     align-items: center;
 }
-.banner-left,.banner-right{
-    color: #999999;
-    font-size: 3vw;
-}
 .banner-text{
     color: #FFFFFF;
-}
-.banner-circle{
-    width: 100%;
-    padding-bottom: 2em;
-    position: absolute;
-    bottom: 1vw;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
 }
 .cirle{
     margin: 0.2vw;
@@ -128,7 +113,7 @@
 }
 .hts-cont{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row;
     justify-content: flex-start;
     align-items: center;
     width: 15vw;
@@ -144,10 +129,9 @@
     color: rgb(41,176,120);
 }
 .hts-text{
-    padding:0 1vw;
+    padding:1em 1vw 0 1vw;
     height: 3em;
     font-size: .5em;
-    padding-top: 1em;
     color: rgb(153,153,153);
     text-align: left;
 }
@@ -253,30 +237,37 @@
 .footer-box{
     width: 100%;
     background-color: rgb(38,162,111);
-    padding: 3vw 10vw;
+    padding: 8vw;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     color: #FFFFFF;
     position: relative;
-    font-size: 1vw;
+    font-size: .8vw;
 }
 .footer-text{
     display: flex;
     flex-flow: nowrap row;
     justify-content: space-between;
+    font-size: .8vw;
 }
 .text-left{
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    padding-right: 4vw;
+    padding-right: 1vw;
 }
 .text-right{
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    padding-left: 4vw;
+    padding-left: 1vw;
+}
+.web{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 18vw;
 }
 .webinf{
     width: 100%;
@@ -285,4 +276,57 @@
     left: 0;
     text-align: center;
     font-size: .5vw;
+}
+.tel-hide-box{
+    color: black;
+    float: right;
+    display: none;
+}
+.header-hide-logo {
+    background: url("images/技能树首页_00.png") no-repeat center;
+    background-size: 100%;
+    width: 50vw;
+    float: left;
+    margin-left: 5vw;
+    padding-bottom: 3.6em;
+    display: none;
+}
+.header-hide-menu{
+    display: none;
+}
+.menu-icon{
+    width: 5vw;
+    height: 3.5vw;
+    border-top: .5vw solid #555555;
+    border-bottom:.5vw solid #555555;
+    background-color: #555555;
+    padding: 1vw 0;
+    margin-top: 6vw;
+    margin-right: 5vw;
+    background-clip:content-box;
+    float: right;
+}
+@media screen and (max-device-width: 420px){
+    .telnb,.wechat,.qq,.weblog,.proj1,.proj{
+        display: none;
+    }
+    .tel-hide-box,.header-hide-logo,.header-hide-menu{
+        display: block;
+    }
+    .hts-cont,.row{
+        display: block;
+    }
+    .hts-text{
+        height: 10em;
+    }
+    .logo{
+        display: block;
+        padding-left: 15vw;
+    }
+    .web{
+        display: block;
+    }
+    .footer-box{
+        padding: 10vw 8vw;
+    }
 }

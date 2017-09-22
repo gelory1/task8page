@@ -75,6 +75,7 @@
 .cont-box{
     padding-left: 15vw;
     padding-right: 15vw;
+    margin-bottom: 10vw;
     width: 100%;
     background-color: rgb(250,250,250);
 }
@@ -92,31 +93,37 @@
 .footer-box{
     width: 100%;
     background-color: rgb(38,162,111);
-    padding: 3vw 10vw;
-    margin-top: 10vw;
+    padding: 8vw;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     color: #FFFFFF;
     position: relative;
-    font-size: 1vw;
+    font-size: .8vw;
 }
 .footer-text{
     display: flex;
     flex-flow: nowrap row;
     justify-content: space-between;
+    font-size: .68vw;
 }
 .text-left{
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    padding-right: 4vw;
+    padding-right: 1vw;
 }
 .text-right{
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    padding-left: 4vw;
+    padding-left: 1vw;
+}
+.web{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 18vw;
 }
 .webinf{
     width: 100%;
@@ -152,4 +159,54 @@
 }
 .col-md-4:hover .cont-div{
     opacity: .8;
+}
+.tel-hide-box{
+    color: black;
+    float: right;
+    display: none;
+}
+.header-hide-logo {
+    background: url("images/技能树首页_00.png") no-repeat center;
+    background-size: 100%;
+    width: 50vw;
+    float: left;
+    margin-left: 5vw;
+    padding-bottom: 3.6em;
+    display: none;
+}
+.header-hide-menu{
+    display: none;
+}
+.menu-icon{
+    width: 5vw;
+    height: 3.5vw;
+    border-top: .5vw solid #555555;
+    border-bottom:.5vw solid #555555;
+    background-color: #555555;
+    padding: 1vw 0;
+    margin-top: 6vw;
+    margin-right: 5vw;
+    background-clip:content-box;
+    float: right;
+}
+@media screen and (max-device-width: 420px){
+    .telnb,.wechat,.qq,.weblog,.proj1,.proj{
+        display: none;
+    }
+    .tel-hide-box,.header-hide-logo,.header-hide-menu{
+        display: block;
+    }
+    .web{
+        display: block;
+    }
+    .footer-box{
+        padding: 10vw 8vw;
+    }
+    .head-img{
+        width: 30vw;
+        height: 30vw;
+    }
+    .head-intro{
+        width: 35vw;
+    }
 }
