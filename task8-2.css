@@ -145,7 +145,7 @@ body{
 .col-md-9{
     padding: 1em;
 }
-p{
+.cont-box p{
     text-indent: 2em;
 }
 .footer-box{
@@ -202,31 +202,58 @@ p{
     width: 50vw;
     float: left;
     margin-left: 5vw;
-    padding-bottom: 3.6em;
+    margin-top: 2vw;
+    padding-bottom: 10vw;
     display: none;
 }
 .header-hide-menu{
     display: none;
+    float: right;
 }
 .menu-icon{
     width: 5vw;
     height: 3.5vw;
-    border-top: .5vw solid #aaaaaa;
-    border-bottom:.5vw solid #aaaaaa;
-    background-color: #aaaaaa;
+    border-top: .5vw solid #555555;
+    border-bottom:.5vw solid #555555;
+    background-color: #555555;
     padding: 1vw 0;
+    margin-top: 6vw;
+    margin-right: 5vw;
     background-clip:content-box;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 2vw;
 }
 .menu-box{
     background-color: #FFFFFF;
     border-radius: 10%;
-    width: 8vw;
-    padding: 1.5vw;
-    margin-top: 5vw;
+    width: 9vw;
+    padding: 4vw;
+    margin-top: 4vw;
     margin-right: 5vw;
     float: right;
 }
-@media screen and (max-device-width: 420px){
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 20vw;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 3vw;
+    right: 1vw;
+    top: 10vw;
+    text-align: center;
+    z-index: 3;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+@media screen and (max-width: 420px){
     .telnb,.wechat,.qq,.weblog,.proj1,.proj{
         display: none;
     }

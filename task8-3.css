@@ -171,11 +171,13 @@
     width: 50vw;
     float: left;
     margin-left: 5vw;
-    padding-bottom: 3.6em;
+    margin-top: 2vw;
+    padding-bottom: 10vw;
     display: none;
 }
 .header-hide-menu{
     display: none;
+    float: right;
 }
 .menu-icon{
     width: 5vw;
@@ -189,7 +191,26 @@
     background-clip:content-box;
     float: right;
 }
-@media screen and (max-device-width: 420px){
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 20vw;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 3vw;
+    right: 1vw;
+    top: 10vw;
+    text-align: center;
+    z-index: 3;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+@media screen and (max-width: 420px){
     .telnb,.wechat,.qq,.weblog,.proj1,.proj{
         display: none;
     }
