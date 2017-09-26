@@ -136,6 +136,8 @@
 .col-md-4{
     position: relative;
     font-size: .8vw;
+    display: -webkit-box;
+    overflow:hidden;
 }
 .row-box{
     width: 100%;
@@ -145,7 +147,7 @@
 }
 .cont-div{
     position: absolute;
-    padding: 3vw 3vw 2.5vw 3vw;
+    padding: 5em 3em 50vw 3em;
     margin-bottom: -2.5vw;
     margin-top: 2em;
     margin-right: 5%;
@@ -156,6 +158,10 @@
     opacity: 0;
     background-color: #000;
     z-index: 2;
+}
+.cont-box,.row-box{
+    margin-bottom: -100000px;
+    padding-bottom: 100000px;
 }
 .col-md-4:hover .cont-div{
     opacity: .8;
