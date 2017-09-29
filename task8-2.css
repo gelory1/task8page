@@ -78,6 +78,8 @@ body{
     width: 100%;
     background-color: rgb(241,167,80);
     position: relative;
+    top: 0;
+    display: inline-block;
 }
 .banner-img {
     width: 100vw;
@@ -221,18 +223,13 @@ body{
     margin-right: 5vw;
     background-clip:content-box;
     float: right;
-    position: absolute;
-    top: 0;
-    right: 2vw;
 }
-.menu-box{
-    background-color: #FFFFFF;
-    border-radius: 10%;
-    width: 9vw;
-    padding: 4vw;
-    margin-top: 4vw;
-    margin-right: 5vw;
-    float: right;
+.menu{
+    width: 5vw;
+    height: 3.5vw;
+    position: absolute;
+    top: -3vw;
+    right: 1vw;
 }
 .dropdown {
     position: relative;
@@ -241,17 +238,29 @@ body{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 20vw;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: rgb(41,176,120);
+    border-top:thin solid #FFFFFF;
+    width: 100vw;
     padding: 3vw;
-    right: 1vw;
-    top: 10vw;
+    right: 0;
+    top: 15vw;
     text-align: center;
     z-index: 3;
 }
-.dropdown:hover .dropdown-content {
+.gp{
+    display: none;
+    width: 100vw;
+    padding-bottom: 22vh;
+}
+.dropdown:hover .dropdown-content{
     display: block;
+    top: 5vw;
+}
+.dropdown:hover .gp{
+    display: block;
+}
+.dropdown:hover .menu{
+    top: -11vw;
 }
 @media screen and (max-width: 420px){
     .telnb,.wechat,.qq,.weblog,.proj1,.proj{
@@ -279,6 +288,9 @@ body{
     }
     .logo{
         width: 80em;
+    }
+    .header{
+        padding-bottom: 17vw;
     }
     .cont-top-box,.cont-bottom-box{
         margin-left: 0;

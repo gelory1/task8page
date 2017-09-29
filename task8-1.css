@@ -69,6 +69,25 @@
 .carousel-control{
     padding-top: 20%;
 }
+.menu-icon{
+    width: 5vw;
+    height: 3.5vw;
+    border-top: .5vw solid #555555;
+    border-bottom:.5vw solid #555555;
+    background-color: #555555;
+    padding: 1vw 0;
+    margin-top: 6vw;
+    margin-right: 5vw;
+    background-clip:content-box;
+    float: right;
+}
+.menu{
+    width: 5vw;
+    height: 3.5vw;
+    position: absolute;
+    top: -3vw;
+    right: 1vw;
+}
 .dropdown {
     position: relative;
     display: inline-block;
@@ -76,28 +95,46 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 20vw;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: rgb(41,176,120);
+    border-top:thin solid #FFFFFF;
+    width: 100vw;
     padding: 3vw;
-    right: 1vw;
-    top: 10vw;
+    right: 0;
+    top: 15vw;
     text-align: center;
     z-index: 3;
 }
-.dropdown:hover .dropdown-content {
+.gp{
+    display: none;
+    width: 100vw;
+    padding-bottom: 20vh;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    top: 5vw;
+}
+.dropdown:hover .gp{
     display: block;
 }
-
-
+.dropdown:hover .menu{
+    top: -11vw;
+}
+.banner-leri{
+    position: relative;
+    top: -41.2vw;
+}
+.carousel-control{
+    position: absolute;
+    height: 41.2vw;
+}
+.carousel-indicators{
+    margin-bottom: 10vw;
+}
 .banner-text-box{
     width: 80vw;
     margin:0 10vw;
-    height: 34vw;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 2;
+    position: relative;
+    top: -25vw;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -129,6 +166,12 @@
 .col-md-3{
     margin-top: .5em;
 }
+.htsbox{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+}
 .hts,.sts,.log,.fre{
     padding: 4em;
 }
@@ -138,6 +181,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 15vw;
+    padding-bottom: 1em;
 }
 .hts-circle{
     width: 3em;
@@ -329,25 +373,29 @@
     background-clip:content-box;
     float: right;
 }
-@media screen and (max-width: 420px){
-    .telnb,.wechat,.qq,.weblog,.proj1,.proj{
+@media screen and (max-width: 610px){
+    .telnb,.wechat,.qq,.weblog,.proj1,.proj,.hts-img{
         display: none;
     }
-    .tel-hide-box,.header-hide-logo,.header-hide-menu{
+    .tel-hide-box,.header-hide-logo,.header-hide-menu,.htsbox{
         display: block;
     }
-    .hts-cont,.row{
-        display: block;
+    .hts-cont{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        width: 100%;
+        padding-bottom: 1em;
     }
     .hts-text{
-        height: 10em;
+        height: 4em;
     }
     .logo{
         display: block;
         padding-left: 15vw;
     }
     .header{
-        padding-bottom: 14vw;
+        padding-bottom: 17vw;
     }
     .web{
         display: block;

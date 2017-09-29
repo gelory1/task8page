@@ -197,6 +197,13 @@
     background-clip:content-box;
     float: right;
 }
+.menu{
+    width: 5vw;
+    height: 3.5vw;
+    position: absolute;
+    top: -3vw;
+    right: 1vw;
+}
 .dropdown {
     position: relative;
     display: inline-block;
@@ -204,17 +211,29 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 20vw;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: rgb(41,176,120);
+    border-top:thin solid #FFFFFF;
+    width: 100vw;
     padding: 3vw;
-    right: 1vw;
-    top: 10vw;
+    right: 0;
+    top: 15vw;
     text-align: center;
     z-index: 3;
 }
-.dropdown:hover .dropdown-content {
+.gp{
+    display: none;
+    width: 100vw;
+    padding-bottom: 26vh;
+}
+.dropdown:hover .dropdown-content{
     display: block;
+    top: 5vw;
+}
+.dropdown:hover .gp{
+    display: block;
+}
+.dropdown:hover .menu{
+    top: -11vw;
 }
 @media screen and (max-width: 420px){
     .telnb,.wechat,.qq,.weblog,.proj1,.proj{
@@ -231,7 +250,9 @@
     }
     .head-img{
         width: 30vw;
-        height: 30vw;
+    }
+    .header{
+        padding-bottom: 17vw;
     }
     .head-intro{
         width: 35vw;
